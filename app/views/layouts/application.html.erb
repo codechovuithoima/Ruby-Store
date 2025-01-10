@@ -24,10 +24,13 @@
 
   <body>
   
-  <nav class="">
-  <%= link_to "Home", root_path %>
-  <%= button_to "Log out", session_path, method: :delete if authenticated? %>
-</nav>
+  <header class="header">
+    <nav class="">
+    <%= link_to "Home", root_path %>
+    <%= button_to "Log out", session_path, method: :delete if authenticated? %>
+    
+    </nav>
+  </header>
 
 <main>
   <%= yield %>
